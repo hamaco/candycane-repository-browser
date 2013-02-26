@@ -17,7 +17,7 @@ class IndexController extends CcRepositoryBrowserAppController
     }
 
     $this->redirect(
-      sprintf('/projects/settings/%s/?tab=repository', $this->request->params['project_id'])
+      sprintf('/projects/%s/settings/?tab=repository', $this->request->params['project_id'])
     );
   }
 
