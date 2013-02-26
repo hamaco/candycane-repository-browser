@@ -21,9 +21,9 @@
           <td><?php echo substr($commit->sha, 0, 7) ?></td>
           <td><input type="radio" name="rev" value="<?php echo $commit->sha ?>" /></td>
           <td><input type="radio" name="rev_to" value="<?php echo $commit->sha ?>" /></td>
-          <td><?= date('Y-m-d H:i', strtotime($commit->commit->committer->date)) ?></td>
-          <td><?= $commit->commit->committer->name ?></td>
-          <td><?= $commit->commit->message ?></td>
+          <td><?php echo date('Y-m-d H:i', strtotime($commit->commit->committer->date)) ?></td>
+          <td><?php echo $commit->commit->committer->name ?></td>
+          <td><?php echo $commit->commit->message ?></td>
         </tr>
       <?php endforeach ?>
     </tbody>
