@@ -1,7 +1,7 @@
 <?php
 
 $pluginContainer = ClassRegistry::getObject('PluginContainer');
-$pluginContainer->installed('cc_repository_browser','0.1');
+$pluginContainer->installed('cc_repository_browser','0.1.1');
 
 
 $menuContainer = ClassRegistry::getObject('MenuContainer');
