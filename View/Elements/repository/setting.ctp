@@ -3,6 +3,7 @@
   <p>
     <label>リポジトリ</label>
     <?php echo $this->Form->text('Repository.url',array(
+      'value' => $repository_url,
       'size'  => 20,
       'div'   => false,
       'label' => false,
