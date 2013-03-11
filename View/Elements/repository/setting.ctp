@@ -7,7 +7,7 @@
       'size'  => 20,
       'div'   => false,
       'label' => false,
-    )); ?>
+    )); ?>(例: yandod/candycane)
   </p>
   </div>
 
