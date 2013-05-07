@@ -1,7 +1,7 @@
 <?php
 
 $pluginContainer = ClassRegistry::getObject('PluginContainer');
-$pluginContainer->installed('cc_repository_browser','0.1.2');
+$pluginContainer->installed('cc_repository_browser','0.1.3');
 
 App::uses('CakeEventManager', 'Event');
 

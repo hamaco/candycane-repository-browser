@@ -118,6 +118,11 @@ class IndexController extends CcRepositoryBrowserAppController
 
   protected function _getContents($url)
   {
-    return file_get_contents($url);
+    $context = stream_context_create(array(
+      'http' => array(
+        'header' => 'User-Agent: CcRepositoryBrowser/0.1.3',
+      ),
+    ));
+    return file_get_contents($url, false, $context);
   }
 }
