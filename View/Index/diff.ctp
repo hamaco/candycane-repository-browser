@@ -1,5 +1,5 @@
 <?php echo $this->Html->css('scm'); ?>
-<h2>リビジョン <?php echo substr($rev_to, 0, 7) ?>:<?php echo substr($rev, 0, 7) ?> <?php echo $path ?></h2>
+<h2><?php echo __('Revision') ?> <?php echo substr($rev_to, 0, 7) ?>:<?php echo substr($rev, 0, 7) ?> <?php echo $path ?></h2>
 
 <?php foreach ($contents->files as $content) : ?>
   <div class="autoscroll">

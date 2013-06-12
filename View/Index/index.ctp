@@ -1,7 +1,7 @@
 <h3>root</h3>
 <?php echo $this->element('CcRepositoryBrowser.tree') ?>
 
-<h3>最新リビジョン</h3>
+<h3><?php echo __('Latest revision') ?></h3>
 <?php echo $this->Form->create(null, array('url' => sprintf('/projects/%s/repository/diff', $project_id), 'type' => 'get')) ?>
   <table class="list changesets">
     <thead>
@@ -9,9 +9,9 @@
         <th>#</th>
         <th></th>
         <th></th>
-        <th>日付</th>
-        <th>作成者</th>
-        <th>コメント</th>
+        <th><?php echo __('Date') ?></th>
+        <th><?php echo __('Author') ?></th>
+        <th><?php echo __('Comment') ?></th>
       </tr>
     </thead>
     <tbody>
@@ -28,5 +28,5 @@
       <?php endforeach ?>
     </tbody>
   </table>
-  <input type="submit" value="差分を見る" />
+  <input type="submit" value="<?php echo __('View') ?>" />
 <?php echo $this->Form->end(); ?>
