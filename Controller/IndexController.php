@@ -23,7 +23,7 @@ class IndexController extends CcRepositoryBrowserAppController
 
   public function index()
   {
-    $this->set('title_for_layout', '/ - リポジトリ');
+    $this->set('title_for_layout', __('Repository') . ' - ' . $this->_project['Project']['name']);
     $repository = $this->Repository->findByProjectId($this->_project['Project']['id']);
     $this->set('project_id', $this->_project['Project']['identifier']);
 

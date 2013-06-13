@@ -41,7 +41,7 @@ $menuContainer->addProjectSettingMenu(
     // 'plugin'  => 'CcRepositoryBrowser',
     'name'    => 'repository',
     'partial' => 'CcRepositoryBrowser.repository/setting',
-    'label'   => 'リポジトリ',
+    'label'   => __('Repository'),
   )
 );
 

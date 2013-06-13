@@ -1,8 +1,8 @@
 <table class="list entries">
   <thead>
     <tr>
-      <th>名前</th>
-      <th>サイズ</th>
+      <th><?php echo __('Name') ?></th>
+      <th><?php echo __('Size') ?></th>
     </tr>
   </thead>
   <tbody>
@@ -23,7 +23,7 @@
         </td>
         <td>
           <?php if ($content->size) : ?>
-            <?php echo $content->size ?>bytes
+            <?php echo $content->size ?> bytes
           <?php endif ?>
         </td>
       </tr>
